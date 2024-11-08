@@ -28,7 +28,7 @@ function App() {
         </button>
       )}
       <Routes>
-        <Route path="/registro" element={<Registro />} />
+        <Route path="/register" element={<Registro />} />
         <Route path="/login" element={<IniciarSesion />} />
         <Route
           path="/nuevoPost"
