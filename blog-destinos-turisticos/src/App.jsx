@@ -1,5 +1,10 @@
 import "./App.css";
-import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { Registro } from "./components/registro";
 import { IniciarSesion } from "./components/iniciarSesion";
 import { NuevoPost } from "./components/nuevoPost";

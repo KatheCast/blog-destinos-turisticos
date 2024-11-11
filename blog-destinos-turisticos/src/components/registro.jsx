@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Registro = () => {
-  const urlApi = "https://6622071827fcd16fa6c8818c.mockapi.io/api/v1/";
+  const urlApi = "https://67263d98302d03037e6cdf7e.mockapi.io/api";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -26,6 +26,7 @@ export const Registro = () => {
       email,
       password,
       createdAt: new Date().toISOString(),
+      avatar: "https://avatar.iran.liara.run/public",
     };
     fetch(`${urlApi}/users`, {
       method: "POST",
@@ -72,4 +73,3 @@ export const Registro = () => {
     </div>
   );
 };
-
