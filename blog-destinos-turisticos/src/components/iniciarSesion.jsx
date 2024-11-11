@@ -66,7 +66,7 @@ export const IniciarSesion = () => {
           onChange={onChange}
         ></input>
         <button type="submit">Iniciar sesión</button>
-        <h3 onClick={goRegister}>¿No tienes cuenta? registrate</h3>
+        <h3 onClick={goRegister}>¿No tienes cuenta? Registrate</h3>
       </form>
     </div>
   );
