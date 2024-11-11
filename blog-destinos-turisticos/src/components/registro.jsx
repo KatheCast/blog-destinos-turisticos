@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Registro = () => {
-  const urlApi = "https://67263d98302d03037e6cdf7e.mockapi.io/api";
+  const urlApi = "https://6622071827fcd16fa6c8818c.mockapi.io/api/v1";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

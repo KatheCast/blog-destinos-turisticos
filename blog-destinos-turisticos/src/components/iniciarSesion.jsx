@@ -15,7 +15,7 @@ const valid_users = [
 ];
 
 export const IniciarSesion = () => {
-  const urlApi = "https://67263d98302d03037e6cdf7e.mockapi.io/api";
+  const urlApi = "https://6622071827fcd16fa6c8818c.mockapi.io/api/v1";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ export const IniciarSesion = () => {
           onChange={onChange}
         ></input>
         <button type="submit">Iniciar sesión</button>
-        <h3 onClick={goRegister}>¿No tienes cuenta? Registrate</h3>
+        <h3 onClick={goRegister}>¿No tienes cuenta? registrate</h3>
       </form>
     </div>
   );

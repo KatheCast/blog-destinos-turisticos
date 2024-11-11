@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 export const Perfil = () => {
-  const urlApi = "https://67263d98302d03037e6cdf7e.mockapi.io/api";
+  const urlApi = "https://6622071827fcd16fa6c8818c.mockapi.io/api/v1";
   const params = useParams();
   const [user, setUser] = useState({});
 
