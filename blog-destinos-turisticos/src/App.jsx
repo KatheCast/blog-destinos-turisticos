@@ -1,15 +1,17 @@
-import "./App.css";
 import {
+  Navigate,
+  Route,
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate,
 } from "react-router-dom";
-import { Registro } from "./components/registro";
+import "./App.css";
+import { Footer } from "./components/footer";
+import { Header } from "./components/header";
 import { IniciarSesion } from "./components/iniciarSesion";
-import { NuevoPost } from "./components/nuevoPost";
 import { ListaDePosts } from "./components/listaDePosts";
+import { NuevoPost } from "./components/nuevoPost";
 import { Perfil } from "./components/perfil";
+import { Registro } from "./components/registro";
 
 function App() {
   const isAuthenticated = () => {
@@ -26,7 +28,10 @@ function App() {
   };
 
   return (
-    <Router>
+  <>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'></link>
+  <Router>
+    <Header />
       {isAuthenticated && (
         <button className="logout" onClick={logout}>
           Cerrar sesión
@@ -60,7 +65,10 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
     </Router>
+  </>
+    
   );
 }
 
