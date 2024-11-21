@@ -5,6 +5,7 @@ import {
   Routes,
 } from "react-router-dom";
 import "./App.css";
+import { Mai} from "./components/main";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { IniciarSesion } from "./components/iniciarSesion";
